@@ -1,10 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}Блог IT_Минималиста!{% endblock %}</title>
+    <!-- Bootstrap Grid -->
+    <link rel="stylesheet" type="text/css" href="/static/assets/bootstrap-grid-only/css/grid12.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
 </head>
 <body>
+{% include "blog/header.html" %}
 
+{% block content %} {% endblock %}
+
+{% include "blog/footer.html" %}
 </body>
 </html>

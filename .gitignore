@@ -20,6 +20,8 @@ __pycache__/
 .Python
 env/
 venv/
+media/
+akiblog/apps/blog/migrations/
 .idea/
 
 # PyInstaller

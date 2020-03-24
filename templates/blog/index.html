@@ -1,15 +1,9 @@
-{% extends "blog/base_elements.html" %}
+{% extends "base.html" %}
 {% load static %}
 
-{% include "blog/header.html" %}
 
-<body>
-
-  <div id="wrapper">
-
-{% block navbar %}
-{% endblock %}
-
+{% block content %}
+<div class="wrapper">
     <div id="content">
       <div class="container">
         <div class="row">
@@ -315,10 +309,5 @@
         </div>
       </div>
     </div>
-
-{% include "blog/footer.html" %}
-
-  </div>
-
-</body>
-</html>
+</div>
+{% endblock %}
